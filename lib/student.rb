@@ -9,6 +9,8 @@ class Student
     @grade = grade
   end
 
+end 
+
   # def self.create_table
   #   sql = <<-SQL
   #   CREATE TABLE IF NOT EXISTS students (
@@ -19,5 +21,3 @@ class Student
   #   SQL
   #   DB[:conn].execute(sql)
   # end
-
-end
