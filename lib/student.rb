@@ -5,6 +5,7 @@ class Student
   attr_reader :id
 
   def inititalize(id = nil, name, grade)
+    @id = id
     @name = name
     @grade = grade
   end
