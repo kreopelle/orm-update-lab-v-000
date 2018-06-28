@@ -31,7 +31,7 @@ class Student
     else
       sql = <<-SQL
       SQL
-    end 
+    end
   end 
 
 end
