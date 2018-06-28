@@ -31,6 +31,7 @@ class Student
     else
       sql = "INSERT INTO students (name, grade) VALUES (?, ?)"
       DB[:conn].execute(sql, self.name, self.grade)
+      self.id = DB[:conn].execute("SELECT last_insert_row_id() FROM students")[0][0]
 
 
     end
