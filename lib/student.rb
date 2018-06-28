@@ -30,5 +30,8 @@ class Student
       self.update
     else
       sql = <<-SQL
+      SQL
+    end 
+  end 
 
 end
