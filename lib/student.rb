@@ -3,7 +3,7 @@ require_relative "../config/environment.rb"
 class Student
   attr_accessor :name, :grade, :id
 
-  def inititalize(id=nil, name, grade)
+  def initialize(id=nil, name, grade)
     @id = id
     @name = name
     @grade = grade
@@ -23,5 +23,12 @@ class Student
   def self.drop_table
     sql = "DROP TABLE students"
     DB[:conn].execute(sql)
+  end
+
+  def save
+    if self.id
+      self.update
+    else
+      sql = <<-SQL
 
 end
